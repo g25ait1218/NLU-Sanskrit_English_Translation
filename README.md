@@ -1,0 +1,2 @@
+# NLU-Sanskrit_English_Translation
+NLP-Assignment2-Sanskrit_English_Translation

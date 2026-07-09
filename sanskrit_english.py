@@ -443,9 +443,9 @@ class Seq2Seq(nn.Module):
 INPUT_DIM = len(src_stoi)
 OUTPUT_DIM = len(tgt_stoi)
 
-ENC_EMB_DIM = 64
-DEC_EMB_DIM = 64
-HID_DIM = 128
+ENC_EMB_DIM = 128
+DEC_EMB_DIM = 128
+HID_DIM = 256
 
 attention = Attention(HID_DIM)
 
@@ -495,7 +495,7 @@ criterion = nn.CrossEntropyLoss(
     ignore_index=PAD_IDX
 )
 
-EPOCHS = 10
+EPOCHS = 15
 
 
 for epoch in range(EPOCHS):
